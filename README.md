@@ -16,6 +16,7 @@ pip install keyboard
 ```
 ## Example №1 (Counter-Strike 2)
 <img width="1919" height="1079" alt="CS2" src="https://github.com/user-attachments/assets/9e4e757e-17cc-4955-aca1-436c8f586e1c" />
+
 ---
 ## Example №2 (Euro Truck Simulator 2)
 <img width="1919" height="1079" alt="ETC2" src="https://github.com/user-attachments/assets/73da86f9-7cfa-4e04-b46f-86bd8aa4dffe" />
