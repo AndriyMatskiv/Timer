@@ -4,9 +4,9 @@ import asyncio
 import win32gui
 import win32con
 import keyboard
-import gc
 import os
 import sys
+import flet_audio as fa
 
 
 def resource_path(filename):
@@ -15,8 +15,9 @@ def resource_path(filename):
     return os.path.join(os.path.abspath("."), filename)
 
 async def main(page: ft.Page):
+    page.update()
     page.title = "Timer"
-    page.window.icon = r"D:\Uni\PyProj\Timer\cloak.ico" # path for icon
+    page.window.icon = resource_path("cloak.ico")
     page.window.bgcolor = ft.Colors.TRANSPARENT
     page.bgcolor = ft.Colors.TRANSPARENT
     page.window.width = 310
@@ -39,6 +40,7 @@ async def main(page: ft.Page):
     audio_file = resource_path("timer-ticks.mp3")
     audio = ft.Audio(src=audio_file,autoplay=False)
     page.overlay.append(audio)
+    page.update()
     total_sec = 0
     
     async def reset(e):
